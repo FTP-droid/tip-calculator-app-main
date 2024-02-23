@@ -19,10 +19,9 @@
 .number-input {
     background-color: var(--very-light-grayish-cyan);
     border: 0;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0rem;
     color: var(--very-dark-cyan);
     direction: rtl;
-    padding-left: 2rem;
     width: 100%;
     border-radius: 5px;
     font-family: var(--space-mono-regular);
@@ -39,7 +38,7 @@
     outline-style: solid;
 }
 
-#bill-input-wrapper {
+.input-wrapper {
     position: relative;
 }
 
@@ -51,21 +50,25 @@
 
 .card {
     width: 50%;
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+#left-card {
+    background-color: blue;
+}
+
 #tip-percentage-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     gap: 1rem;
+    background-color: pink;
 }
 
 .tip-percentage {
-    width: calc(33% - 0.6rem);
     padding: 0.5rem 0;
     background-color: var(--very-dark-cyan);
     border: 0;
@@ -83,5 +86,5 @@
 }
 
 #custom-tip-input {
-    width: calc(33% - 4rem);
+    
 }

@@ -7,11 +7,11 @@ function Calculator() {
 
   return (
     <main className={styles.container}>
-      <section className={styles['card']}>
+      <section className={styles['card']} id={styles['left-card']}>
         {/* Input for the bill */}
         <div className={styles['input-container-with-label']}>
           <label htmlFor='bill-input' className={styles['input-label']}>Bill</label>
-          <div id={styles['bill-input-wrapper']}>
+          <div className={styles['input-wrapper']}>
             <input className={styles['number-input']} id='bill-input' placeholder='0'/>
             <img src={dollarIcon} className={styles.icon}/>
           </div>
@@ -21,7 +21,7 @@ function Calculator() {
             <div className={styles['input-label']}> Select Tip %</div>
             <div id={styles['tip-percentage-container']}>
               {tipPercentages.map(e => 
-                <button className={styles['tip-percentage']} key={e}>{e}%</button>
+                <button className={styles['tip-percentage']}>{e}%</button>
               )}
               <input className={styles['number-input']} id={styles['custom-tip-input']} placeholder='0'/>
             </div>
@@ -29,7 +29,7 @@ function Calculator() {
         {/* Input for the number of people */}
         <div className={styles['input-container-with-label']}>
           <label htmlFor='number-of-people-input' className={styles['input-label']}>Number of People</label>
-          <div id={styles['bill-input-wrapper']}>
+          <div className={styles['input-wrapper']}>
             <input className={styles['number-input']} id='number-of-people-input' placeholder='0'/>
             <img src={personIcon} className={styles.icon}/>
           </div>
