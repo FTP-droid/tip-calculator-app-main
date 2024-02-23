@@ -1,6 +1,43 @@
 .container {
-    width: min(40rem, 100%);
+    width: min(60rem, 100%);
     background-color: var(--white);
-    height: 20rem;
-    border-radius: 15px;
+    height: 30rem;
+    border-radius: 30px;
+    display: flex;
+}
+
+#bill-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#bill-input-label {
+    color: var(--dark-grayish-cyan);
+}
+
+#bill-input {
+    background-color: var(--very-light-grayish-cyan);
+    border: 0;
+    padding: 0.5rem 1rem;
+    color: var(--very-dark-cyan);
+    direction: rtl;
+    padding-left: 2rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#bill-input-wrapper {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    top: 0.9rem;
+}
+
+.card {
+    width: 50%;
+    padding: 3rem;
 }
