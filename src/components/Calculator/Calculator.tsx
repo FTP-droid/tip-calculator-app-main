@@ -1,7 +1,9 @@
 
+import styles from './Calculator.module.css';
+
 function Calculator() {
   return (
-    <main>Calculator</main>
+    <main className={styles.container}>Calculator</main>
   )
 }
 
