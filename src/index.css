@@ -16,3 +16,8 @@
     font-weight: 700;
     background-color: var(--light-grayish-cyan);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
