@@ -1,6 +1,6 @@
 .container {
-    width: min(35rem, 100%);
+    width: min(40rem, 100%);
     background-color: var(--white);
-    height: 17.5rem;
+    height: 20rem;
     border-radius: 15px;
 }
