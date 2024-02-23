@@ -14,10 +14,11 @@
     font-family: space-mono-regular;
     font-weight: 700;
     background-color: var(--light-grayish-cyan);
+    --input-font-size: 24px;
 }
 
 input {
-    font-size: 24px;
+    font-size: var(--input-font-size);
 }
 
 * {
