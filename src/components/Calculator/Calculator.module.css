@@ -27,6 +27,16 @@
     border-radius: 5px;
 }
 
+#bill-input:hover {
+    cursor: pointer;
+}
+
+#bill-input:focus {
+    outline-color: var(--strong-cyan);
+    outline-width: 2px;
+    outline-style: solid;
+}
+
 #bill-input-wrapper {
     position: relative;
 }
@@ -49,14 +59,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    gap: 1rem;
 }
 
 .tip-percentage {
-    width: 33%;
+    width: calc(33% - 0.6rem);
+    padding: 0.5rem 0;
     background-color: var(--very-dark-cyan);
     border: 0;
     font-family: space-mono-regular;
     font-size: var(--input-font-size);
     color: var(--white);
     font-weight: 700;
+    border-radius: 5px;
 }
