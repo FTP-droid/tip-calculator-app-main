@@ -27,14 +27,11 @@
     border-radius: 5px;
 }
 
-#bill-input:hover {
-    cursor: pointer;
-}
-
 #bill-input:focus {
     outline-color: var(--strong-cyan);
     outline-width: 2px;
     outline-style: solid;
+    cursor: pointer;
 }
 
 #bill-input-wrapper {
