@@ -11,10 +11,13 @@
     --light-grayish-cyan: hsl(185, 41%, 84%);
     --very-light-grayish-cyan: hsl(189, 41%, 97%);
     --white: hsl(0, 0%, 100%);
-    font-size: 24px;
     font-family: space-mono-regular;
     font-weight: 700;
     background-color: var(--light-grayish-cyan);
+}
+
+input {
+    font-size: 24px;
 }
 
 * {
