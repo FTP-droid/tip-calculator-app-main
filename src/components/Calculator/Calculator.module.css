@@ -6,13 +6,13 @@
     display: flex;
 }
 
-#bill-input-container {
+.input-container-with-label {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-#bill-input-label {
+.input-label {
     color: var(--dark-grayish-cyan);
 }
 
