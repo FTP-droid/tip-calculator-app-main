@@ -1,5 +1,6 @@
 import styles from './Calculator.module.css';
 import dollarIcon from '../../../images/icon-dollar.svg';
+import personIcon from '../../../images/icon-person.svg';
 
 function Calculator() {
   const tipPercentages = [5, 10, 15, 25 , 50];
@@ -20,10 +21,18 @@ function Calculator() {
             <div className={styles['input-label']}> Select Tip %</div>
             <div id={styles['tip-percentage-container']}>
               {tipPercentages.map(e => 
-                <button className={styles['tip-percentage']}>{e}%</button>
+                <button className={styles['tip-percentage']} key={e}>{e}%</button>
               )}
               <input className={styles['number-input']} id={styles['custom-tip-input']} placeholder='0'/>
             </div>
+        </div>
+        {/* Input for the number of people */}
+        <div className={styles['input-container-with-label']}>
+          <label htmlFor='number-of-people-input' className={styles['input-label']}>Number of People</label>
+          <div id={styles['bill-input-wrapper']}>
+            <input className={styles['number-input']} id='number-of-people-input' placeholder='0'/>
+            <img src={personIcon} className={styles.icon}/>
+          </div>
         </div>
       </section>
       <section className={styles['card']}>
