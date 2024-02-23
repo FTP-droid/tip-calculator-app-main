@@ -11,7 +11,7 @@ function Calculator() {
         <div className={styles['input-container-with-label']}>
           <label htmlFor='bill-input' className={styles['input-label']}>Bill</label>
           <div id={styles['bill-input-wrapper']}>
-            <input id={styles['bill-input']} placeholder='0'/>
+            <input className={styles['number-input']} id='bill-input' placeholder='0'/>
             <img src={dollarIcon} className={styles.icon}/>
           </div>
         </div>
@@ -22,6 +22,7 @@ function Calculator() {
               {tipPercentages.map(e => 
                 <button className={styles['tip-percentage']}>{e}%</button>
               )}
+              <input className={styles['number-input']} id={styles['custom-tip-input']} placeholder='0'/>
             </div>
         </div>
       </section>

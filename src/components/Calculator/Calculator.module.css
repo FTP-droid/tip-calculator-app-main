@@ -16,7 +16,7 @@
     color: var(--dark-grayish-cyan);
 }
 
-#bill-input {
+.number-input {
     background-color: var(--very-light-grayish-cyan);
     border: 0;
     padding: 0.5rem 1rem;
@@ -25,13 +25,18 @@
     padding-left: 2rem;
     width: 100%;
     border-radius: 5px;
+    font-family: var(--space-mono-regular);
+    caret-color: var(--strong-cyan);
 }
 
-#bill-input:focus {
+.number-input:hover {
+    cursor: pointer;
+}
+
+.number-input:focus {
     outline-color: var(--strong-cyan);
     outline-width: 2px;
     outline-style: solid;
-    cursor: pointer;
 }
 
 #bill-input-wrapper {
@@ -41,7 +46,7 @@
 .icon {
     position: absolute;
     left: 1rem;
-    top: 0.9rem;
+    top: 1rem;
 }
 
 .card {
@@ -64,9 +69,19 @@
     padding: 0.5rem 0;
     background-color: var(--very-dark-cyan);
     border: 0;
-    font-family: space-mono-regular;
+    font-family: var(--default-font-family);
     font-size: var(--input-font-size);
     color: var(--white);
     font-weight: 700;
     border-radius: 5px;
+}
+
+.tip-percentage:hover {
+    cursor: pointer;
+    background-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
+}
+
+#custom-tip-input {
+    width: calc(33% - 4rem);
 }
