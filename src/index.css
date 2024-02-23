@@ -14,4 +14,5 @@
     font-size: 24px;
     font-family: space-mono-regular;
     font-weight: 700;
+    background-color: var(--light-grayish-cyan);
 }
