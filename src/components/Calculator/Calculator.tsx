@@ -3,6 +3,7 @@ import dollarIcon from '../../../images/icon-dollar.svg';
 import personIcon from '../../../images/icon-person.svg';
 import { useEffect, useState } from 'react';
 import TipPercentages from '../TipPercentages/TipPercentages';
+import OutputField from '../OutputField/OutputField';
 
 function Calculator() {
 
@@ -68,20 +69,8 @@ function Calculator() {
       </section>
       <section className={styles['card']} id={styles['output-card']}>
         <div id={styles['outputs-container']}>
-          <div className={styles['output']}>
-            <div className={styles['output-text']}>
-              <div>Tip Amount</div>
-              <div className={styles['person-text']}>/ person</div>
-            </div>
-            <div className={styles['output-value']}>${tipAmount || '0.00'}</div>
-          </div>
-          <div className={styles['output']}>
-            <div className={styles['output-text']}>
-              <div>Total</div>
-              <div className={styles['person-text']}>/ person</div>
-            </div>
-            <div className={styles['output-value']}>${totalPerPerson || '0.00'}</div>
-          </div>
+          <OutputField outputText='Tip Amount' numberValue={tipAmount}/>
+          <OutputField outputText='Total' numberValue={totalPerPerson}/>
         </div>
         <button id={styles['reset-button']} onClick={onReset} 
           disabled={bill == 0 || tipPercentage == 0 || numberOfPeople == 0}>RESET</button>

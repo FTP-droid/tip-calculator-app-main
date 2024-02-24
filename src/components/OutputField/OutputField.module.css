@@ -1,0 +1,18 @@
+.output {
+    display: flex;
+    justify-content: space-between;
+}
+
+.output-text {
+    width: 50%;
+}
+
+.output-value {
+    font-size: 2.5rem;
+    height: 100%;
+    color: var(--strong-cyan);
+}
+
+.person-text {
+    color: var(--grayish-cyan);
+}
