@@ -135,4 +135,11 @@
     border-radius: 5px;
     width: calc(100% - 5rem);
     margin-bottom: 1.5rem;
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+}
+
+#reset-button:hover {
+    cursor: pointer;
+    background-color: var(--light-grayish-cyan);
 }
