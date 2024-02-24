@@ -1,6 +1,6 @@
 @font-face {
     font-family: space-mono-regular;
-    src: url('../font/SpaceMono-Regular.ttf');
+    src: url('./assets/font/SpaceMono-Regular.ttf');
 }
 
 :root {
