@@ -5,8 +5,8 @@ import Calculator from './components/Calculator/Calculator';
 function App() {
 
   return (
-    <div className={'main-container'}>
-      <img src={logo}/>
+    <div className='main-container'>
+      <img src={logo} className='logo'/>
       <Calculator />
     </div>
   )
