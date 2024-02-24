@@ -1,9 +1,8 @@
 import styles from './Calculator.module.css';
-import dollarIcon from '../../../images/icon-dollar.svg';
-import personIcon from '../../../images/icon-person.svg';
 import { useEffect, useState } from 'react';
 import TipPercentages from '../TipPercentages/TipPercentages';
 import OutputField from '../OutputField/OutputField';
+import InputField from '../InputField/InputField';
 
 function Calculator() {
 
@@ -46,26 +45,13 @@ function Calculator() {
   return (
     <main className={styles.container}>
       <section className={styles['card']} id={styles['input-card']}>
-        {/* Input for the bill */}
-        <div className={styles['input-container-with-label']}>
-          <label htmlFor='bill-input' className={styles['input-label']}>Bill</label>
-          <div className={styles['input-wrapper']}>
-            <input className='number-input' id='bill-input' placeholder='0' onChange={onBillChange}
-              value={bill || ''} type='number'/>
-            <img src={dollarIcon} className={styles.icon}/>
-          </div>
-        </div>
-        {/* Input for the tip percentage */}
+        <InputField inputLabel='Bill' inputValue={bill} valueChangeFunc={onBillChange}/>
         <TipPercentages setTipPercentage={setTipPercentage} tipPercentage={tipPercentage}/>
-        {/* Input for the number of people */}
-        <div className={styles['input-container-with-label']}>
-          <label htmlFor='number-of-people-input' className={styles['input-label']}>Number of People</label>
-          <div className={styles['input-wrapper']}>
-            <input className='number-input' id='number-of-people-input' placeholder='0'
-            onChange={onNumberOfPeopleChange} value={numberOfPeople || ""} type='number'/>
-            <img src={personIcon} className={styles.icon}/>
-          </div>
-        </div>
+        <InputField 
+          inputLabel='Number of People' 
+          inputValue={numberOfPeople} 
+          valueChangeFunc={onNumberOfPeopleChange}
+        />
       </section>
       <section className={styles['card']} id={styles['output-card']}>
         <div id={styles['outputs-container']}>

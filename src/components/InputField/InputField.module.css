@@ -1,0 +1,19 @@
+.input-container-with-label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-label {
+    color: var(--dark-grayish-cyan);
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
