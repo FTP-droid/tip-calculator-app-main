@@ -1,6 +1,6 @@
 import styles from './InputField.module.css';
-import dollarIcon from '../../../images/icon-dollar.svg';
-import personIcon from '../../../images/icon-person.svg';
+import dollarIcon from '../../assets/images/icon-dollar.svg';
+import personIcon from '../../assets/images/icon-person.svg';
 
 function InputField({inputLabel, inputValue, valueChangeFunc}: 
     {
