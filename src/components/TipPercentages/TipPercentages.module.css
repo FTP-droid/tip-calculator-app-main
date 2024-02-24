@@ -1,0 +1,33 @@
+.tip-percentage {
+    padding: 0.5rem 0;
+    background-color: var(--very-dark-cyan);
+    border: 0;
+    font-family: var(--default-font-family);
+    font-size: var(--input-font-size);
+    color: var(--white);
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.tip-percentage:hover {
+    cursor: pointer;
+    background-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
+}
+
+#tip-percentage-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 1rem;
+}
+
+.selected-tip {
+    background-color: var(--strong-cyan);
+}
+
+.selected-tip:hover {
+    background-color: var(--strong-cyan);
+    color: var(--white);
+    cursor: pointer;
+}

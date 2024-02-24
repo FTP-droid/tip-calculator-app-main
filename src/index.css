@@ -27,3 +27,28 @@ input {
     margin: 0;
     padding: 0;
 }
+
+.number-input {
+    background-color: var(--very-light-grayish-cyan);
+    border: 0;
+    padding: 0.5rem 0rem;
+    padding-right: 1rem;
+    padding-left: 2.5rem;
+    color: var(--very-dark-cyan);
+    direction: rtl;
+    width: calc(100% - 3.5rem);
+    border-radius: 5px;
+    font-family: var(--space-mono-regular);
+    caret-color: var(--strong-cyan);
+    font-weight: var(--defaut-max-font-weight);
+}
+
+.number-input:hover {
+    cursor: pointer;
+}
+
+.number-input:focus {
+    outline-color: var(--strong-cyan);
+    outline-width: 2px;
+    outline-style: solid;
+}

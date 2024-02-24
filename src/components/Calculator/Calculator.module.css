@@ -20,30 +20,6 @@
     color: var(--dark-grayish-cyan);
 }
 
-.number-input {
-    background-color: var(--very-light-grayish-cyan);
-    border: 0;
-    padding: 0.5rem 0rem;
-    padding-right: 1rem;
-    padding-left: 2.5rem;
-    color: var(--very-dark-cyan);
-    direction: rtl;
-    width: calc(100% - 3.5rem);
-    border-radius: 5px;
-    font-family: var(--space-mono-regular);
-    caret-color: var(--strong-cyan);
-}
-
-.number-input:hover {
-    cursor: pointer;
-}
-
-.number-input:focus {
-    outline-color: var(--strong-cyan);
-    outline-width: 2px;
-    outline-style: solid;
-}
-
 .input-wrapper {
     position: relative;
 }
@@ -69,23 +45,6 @@
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     gap: 1rem;
-}
-
-.tip-percentage {
-    padding: 0.5rem 0;
-    background-color: var(--very-dark-cyan);
-    border: 0;
-    font-family: var(--default-font-family);
-    font-size: var(--input-font-size);
-    color: var(--white);
-    font-weight: 700;
-    border-radius: 5px;
-}
-
-.tip-percentage:hover {
-    cursor: pointer;
-    background-color: var(--light-grayish-cyan);
-    color: var(--very-dark-cyan);
 }
 
 #input-card {
@@ -142,4 +101,13 @@
 #reset-button:hover {
     cursor: pointer;
     background-color: var(--light-grayish-cyan);
+}
+
+#reset-button:disabled {
+    background-color: #0d686d;
+    color: #035e63;
+}
+
+#reset-button:disabled#reset-button:hover{
+    cursor: default;
 }
