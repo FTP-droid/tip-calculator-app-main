@@ -20,9 +20,11 @@
     background-color: var(--very-light-grayish-cyan);
     border: 0;
     padding: 0.5rem 0rem;
+    padding-right: 1rem;
+    padding-left: 2.5rem;
     color: var(--very-dark-cyan);
     direction: rtl;
-    width: 100%;
+    width: calc(100% - 3.5rem);
     border-radius: 5px;
     font-family: var(--space-mono-regular);
     caret-color: var(--strong-cyan);
@@ -56,16 +58,11 @@
     justify-content: space-between;
 }
 
-#left-card {
-    background-color: blue;
-}
-
 #tip-percentage-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     gap: 1rem;
-    background-color: pink;
 }
 
 .tip-percentage {
@@ -83,8 +80,4 @@
     cursor: pointer;
     background-color: var(--light-grayish-cyan);
     color: var(--very-dark-cyan);
-}
-
-#custom-tip-input {
-    
 }
