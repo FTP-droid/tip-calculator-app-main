@@ -52,3 +52,13 @@ input {
     outline-width: 2px;
     outline-style: solid;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: textfield;
+}
