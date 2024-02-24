@@ -35,7 +35,7 @@ function Calculator() {
           </div>
         </div>
       </section>
-      <section className={styles['card']}>
+      <section className={styles['card']} id={styles['right-card']}>
         Output
       </section>
     </main>
