@@ -36,7 +36,23 @@ function Calculator() {
         </div>
       </section>
       <section className={styles['card']} id={styles['output-card']}>
-        Output
+        <div id={styles['outputs-container']}>
+          <div className={styles['output']}>
+            <div className={styles['output-text']}>
+              <div>Tip Amount</div>
+              <div className={styles['person-text']}>/ person</div>
+            </div>
+            <div className={styles['output-value']}>$0.00</div>
+          </div>
+          <div className={styles['output']}>
+            <div className={styles['output-text']}>
+              <div>Total</div>
+              <div className={styles['person-text']}>/ person</div>
+            </div>
+            <div className={styles['output-value']}>$0.00</div>
+          </div>
+        </div>
+        <button id={styles['reset-button']}>RESET</button>
       </section>
     </main>
   )
