@@ -20,7 +20,8 @@ function InputField({inputLabel, inputValue, valueChangeFunc}:
           placeholder='0' 
           onChange={valueChangeFunc}
           value={inputValue || ''} type='number'/>
-        <img src={inputLabel === 'Bill'? dollarIcon: personIcon} className={styles.icon} />
+        <img src={inputLabel === 'Bill'? dollarIcon: personIcon} className={styles.icon} 
+          alt='icon for the input field'/>
       </div>
     </div>
   )
