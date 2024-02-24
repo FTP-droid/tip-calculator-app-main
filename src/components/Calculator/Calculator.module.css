@@ -88,10 +88,10 @@
     color: var(--very-dark-cyan);
 }
 
-#left-card {
+#input-card {
     background-color: var(--white);
 }
 
-#right-card {
+#output-card {
     background-color: var(--very-dark-cyan);
 }

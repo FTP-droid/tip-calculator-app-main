@@ -7,7 +7,7 @@ function Calculator() {
 
   return (
     <main className={styles.container}>
-      <section className={styles['card']} id={styles['left-card']}>
+      <section className={styles['card']} id={styles['input-card']}>
         {/* Input for the bill */}
         <div className={styles['input-container-with-label']}>
           <label htmlFor='bill-input' className={styles['input-label']}>Bill</label>
@@ -35,7 +35,7 @@ function Calculator() {
           </div>
         </div>
       </section>
-      <section className={styles['card']} id={styles['right-card']}>
+      <section className={styles['card']} id={styles['output-card']}>
         Output
       </section>
     </main>
