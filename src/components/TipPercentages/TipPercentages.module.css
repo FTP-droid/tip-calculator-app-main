@@ -31,3 +31,8 @@
     color: var(--white);
     cursor: pointer;
 }
+
+#custom-tip-input {
+    padding-left: 0.5rem;
+    width: calc(100% - 1.5rem);
+}

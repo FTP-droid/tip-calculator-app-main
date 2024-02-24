@@ -26,8 +26,9 @@ function TipPercentages({setTipPercentage, tipPercentage}:
               customInputFocused={customInputFocused}
             />
           )}
-          <input className='number-input' id={styles['custom-tip-input']} placeholder='0'
-          onChange={onCustomTipChange} onFocus={() => setCustomInputFocused(true)}/>
+          <input className='number-input' id={styles['custom-tip-input']} placeholder='CUSTOM'
+          onChange={onCustomTipChange} onFocus={() => {setCustomInputFocused(true); setTipPercentage(0)}}
+          value={(customInputFocused && tipPercentage) || ''} type='number'/>
       </div>
     </div>
   )
