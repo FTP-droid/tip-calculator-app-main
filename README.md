@@ -21,8 +21,8 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/tip-calculator-app-solution-react-5HnxylWGL0)
+- Live Site URL: [Live Site URL](https://ftp-droid.github.io/tip-calculator-app-main/)
 
 ## My process
 I started with building the desktop version of the application using React. I followed the design of the given templates
